@@ -18,7 +18,7 @@ export default class Navi extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light expand="md" className="p-5">
+        <Navbar color="faded" light expand="md" className="p-5 bg-primary">
           <NavbarBrand href="/">Zachariah Lowe's Think test</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

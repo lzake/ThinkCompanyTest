@@ -3,6 +3,7 @@ import Navi from './Nav';
 import SeptaForm from './SeptaForm';
 import HelperText from './HelperText';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { PropsRoute, PublicRoute, PrivateRoute } from 'react-router-with-props';
 
 class App extends Component {
   render() {
@@ -11,11 +12,10 @@ class App extends Component {
       <Navi />
       <Router>
       <div>
-      <SeptaForm />
-      <HelperText />
+      <PropsRoute exact path="/" component={SeptaForm}/>
+      <PropsRoute exact path="/help" component={HelperText}/>
       </div>
   </Router>
-
       </div>
     );
   }
