@@ -18,8 +18,8 @@ export default class Navi extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/">Zachariah Lowe's Think Company SEPTA test</NavbarBrand>
+        <Navbar color="faded" light expand="md" className="p-5">
+          <NavbarBrand href="/">Zachariah Lowe's Think test</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
